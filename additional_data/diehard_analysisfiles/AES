@@ -1,0 +1,333 @@
+ BIRTHDAY SPACINGS TEST, M= 512 N=2**24 LAMBDA=  2.0000
+           D_AES_BIN       using bits  1 to 24 p-value=  .220065
+           D_AES_BIN       using bits  2 to 25 p-value=  .471704
+           D_AES_BIN       using bits  3 to 26 p-value=  .089225
+           D_AES_BIN       using bits  4 to 27 p-value=  .571168
+           D_AES_BIN       using bits  5 to 28 p-value=  .620285
+           D_AES_BIN       using bits  6 to 29 p-value=  .619544
+           D_AES_BIN       using bits  7 to 30 p-value=  .708053
+           D_AES_BIN       using bits  8 to 31 p-value=  .561316
+           D_AES_BIN       using bits  9 to 32 p-value=  .098725
+   The 9 p-values were
+        .220065   .471704   .089225   .571168   .620285
+        .619544   .708053   .561316   .098725
+  A KSTEST for the 9 p-values yields  .543658
+--------------------------------------------------------------------------------
+           OPERM5 test for file D_AES_BIN      
+ chisquare for 99 degrees of freedom= 76.549; p-value= .045828
+           OPERM5 test for file D_AES_BIN      
+ chisquare for 99 degrees of freedom=102.068; p-value= .603789
+--------------------------------------------------------------------------------
+    Binary rank test for D_AES_BIN      
+         Rank test for 31x31 binary matrices:
+        rows from leftmost 31 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        28       197     211.4   .983261     .983
+        29      5191    5134.0   .632611    1.616
+        30     23165   23103.0   .166133    1.782
+        31     11447   11551.5   .945793    2.728
+  chisquare= 2.728 for 3 d. of f.; p-value= .613784
+    Binary rank test for D_AES_BIN      
+         Rank test for 32x32 binary matrices:
+        rows from leftmost 32 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        29       219     211.4   .271909     .272
+        30      5217    5134.0  1.341505    1.613
+        31     23017   23103.0   .320480    1.934
+        32     11547   11551.5   .001772    1.936
+  chisquare= 1.936 for 3 d. of f.; p-value= .496204
+--------------------------------------------------------------------------------
+ b-rank test for bits  1 to  8 p=1-exp(-SUM/2)= .10523
+ b-rank test for bits  2 to  9 p=1-exp(-SUM/2)= .79408
+ b-rank test for bits  3 to 10 p=1-exp(-SUM/2)= .85154
+ b-rank test for bits  4 to 11 p=1-exp(-SUM/2)= .98873
+ b-rank test for bits  5 to 12 p=1-exp(-SUM/2)= .73272
+ b-rank test for bits  6 to 13 p=1-exp(-SUM/2)= .75379
+ b-rank test for bits  7 to 14 p=1-exp(-SUM/2)= .87204
+ b-rank test for bits  8 to 15 p=1-exp(-SUM/2)= .74922
+ b-rank test for bits  9 to 16 p=1-exp(-SUM/2)= .27334
+ b-rank test for bits 10 to 17 p=1-exp(-SUM/2)= .53917
+ b-rank test for bits 11 to 18 p=1-exp(-SUM/2)= .95315
+ b-rank test for bits 12 to 19 p=1-exp(-SUM/2)= .30753
+ b-rank test for bits 13 to 20 p=1-exp(-SUM/2)= .28819
+ b-rank test for bits 14 to 21 p=1-exp(-SUM/2)= .98609
+ b-rank test for bits 15 to 22 p=1-exp(-SUM/2)= .87546
+ b-rank test for bits 16 to 23 p=1-exp(-SUM/2)= .81372
+ b-rank test for bits 17 to 24 p=1-exp(-SUM/2)= .02791
+ b-rank test for bits 18 to 25 p=1-exp(-SUM/2)= .24826
+ b-rank test for bits 19 to 26 p=1-exp(-SUM/2)= .50898
+ b-rank test for bits 20 to 27 p=1-exp(-SUM/2)= .28752
+ b-rank test for bits 21 to 28 p=1-exp(-SUM/2)= .38459
+ b-rank test for bits 22 to 29 p=1-exp(-SUM/2)= .41377
+ b-rank test for bits 23 to 30 p=1-exp(-SUM/2)= .68601
+ b-rank test for bits 24 to 31 p=1-exp(-SUM/2)= .63245
+ b-rank test for bits 25 to 32 p=1-exp(-SUM/2)= .89329
+   TEST SUMMARY, 25 tests on 100,000 random 6x8 matrices
+ These should be 25 uniform [0,1] random variables:
+     .105235     .794078     .851543     .988727     .732723
+     .753790     .872044     .749222     .273340     .539173
+     .953154     .307530     .288193     .986087     .875463
+     .813724     .027910     .248259     .508980     .287518
+     .384594     .413774     .686007     .632454     .893285
+   brank test summary for D_AES_BIN      
+       The KS test for those 25 supposed UNI's yields
+                    KS p-value= .872709
+--------------------------------------------------------------------------------
+  No. missing words should average  141909. with sigma=428.
+ tst no  1:  142113 missing words,     .48 sigmas from mean, p-value= .68292
+ tst no  2:  142800 missing words,    2.08 sigmas from mean, p-value= .98128
+ tst no  3:  141547 missing words,    -.85 sigmas from mean, p-value= .19862
+ tst no  4:  142000 missing words,     .21 sigmas from mean, p-value= .58389
+ tst no  5:  141873 missing words,    -.08 sigmas from mean, p-value= .46618
+ tst no  6:  141920 missing words,     .02 sigmas from mean, p-value= .50995
+ tst no  7:  142019 missing words,     .26 sigmas from mean, p-value= .60112
+ tst no  8:  142383 missing words,    1.11 sigmas from mean, p-value= .86579
+ tst no  9:  141333 missing words,   -1.35 sigmas from mean, p-value= .08906
+ tst no 10:  141522 missing words,    -.90 sigmas from mean, p-value= .18274
+ tst no 11:  142366 missing words,    1.07 sigmas from mean, p-value= .85701
+ tst no 12:  141404 missing words,   -1.18 sigmas from mean, p-value= .11887
+ tst no 13:  142076 missing words,     .39 sigmas from mean, p-value= .65152
+ tst no 14:  141147 missing words,   -1.78 sigmas from mean, p-value= .03744
+ tst no 15:  142358 missing words,    1.05 sigmas from mean, p-value= .85275
+ tst no 16:  142013 missing words,     .24 sigmas from mean, p-value= .59570
+ tst no 17:  142146 missing words,     .55 sigmas from mean, p-value= .70986
+ tst no 18:  142787 missing words,    2.05 sigmas from mean, p-value= .97985
+ tst no 19:  140839 missing words,   -2.50 sigmas from mean, p-value= .00620
+ tst no 20:  141454 missing words,   -1.06 sigmas from mean, p-value= .14370
+--------------------------------------------------------------------------------
+    OPSO for D_AES_BIN       using bits 23 to 32        142519  2.102  .9822
+    OPSO for D_AES_BIN       using bits 22 to 31        141478 -1.487  .0685
+    OPSO for D_AES_BIN       using bits 21 to 30        142056   .506  .6935
+    OPSO for D_AES_BIN       using bits 20 to 29        142443  1.840  .9671
+    OPSO for D_AES_BIN       using bits 19 to 28        141422 -1.680  .0464
+    OPSO for D_AES_BIN       using bits 18 to 27        141918   .030  .5119
+    OPSO for D_AES_BIN       using bits 17 to 26        141886  -.080  .4679
+    OPSO for D_AES_BIN       using bits 16 to 25        141568 -1.177  .1196
+    OPSO for D_AES_BIN       using bits 15 to 24        142253  1.185  .8820
+    OPSO for D_AES_BIN       using bits 14 to 23        141833  -.263  .3962
+    OPSO for D_AES_BIN       using bits 13 to 22        142122   .733  .7683
+    OPSO for D_AES_BIN       using bits 12 to 21        142154   .844  .8006
+    OPSO for D_AES_BIN       using bits 11 to 20        141714  -.674  .2503
+    OPSO for D_AES_BIN       using bits 10 to 19        141735  -.601  .2739
+    OPSO for D_AES_BIN       using bits  9 to 18        142478  1.961  .9751
+    OPSO for D_AES_BIN       using bits  8 to 17        141550 -1.239  .1077
+    OPSO for D_AES_BIN       using bits  7 to 16        141869  -.139  .4447
+    OPSO for D_AES_BIN       using bits  6 to 15        141745  -.567  .2855
+    OPSO for D_AES_BIN       using bits  5 to 14        141764  -.501  .3081
+    OPSO for D_AES_BIN       using bits  4 to 13        142275  1.261  .8963
+    OPSO for D_AES_BIN       using bits  3 to 12        142097   .647  .7412
+    OPSO for D_AES_BIN       using bits  2 to 11        142085   .606  .7277
+    OPSO for D_AES_BIN       using bits  1 to 10        141190 -2.480  .0066
+    OQSO for D_AES_BIN       using bits 28 to 32        141565 -1.167  .1216
+    OQSO for D_AES_BIN       using bits 27 to 31        142194   .965  .8327
+    OQSO for D_AES_BIN       using bits 26 to 30        142161   .853  .8032
+    OQSO for D_AES_BIN       using bits 25 to 29        142148   .809  .7908
+    OQSO for D_AES_BIN       using bits 24 to 28        141883  -.089  .4644
+    OQSO for D_AES_BIN       using bits 23 to 27        142575  2.257  .9880
+    OQSO for D_AES_BIN       using bits 22 to 26        141448 -1.564  .0589
+    OQSO for D_AES_BIN       using bits 21 to 25        142039   .440  .6699
+    OQSO for D_AES_BIN       using bits 20 to 24        142197   .975  .8353
+    OQSO for D_AES_BIN       using bits 19 to 23        142581  2.277  .9886
+    OQSO for D_AES_BIN       using bits 18 to 22        142444  1.812  .9650
+    OQSO for D_AES_BIN       using bits 17 to 21        142127   .738  .7697
+    OQSO for D_AES_BIN       using bits 16 to 20        141571 -1.147  .1257
+    OQSO for D_AES_BIN       using bits 15 to 19        142076   .565  .7140
+    OQSO for D_AES_BIN       using bits 14 to 18        141954   .151  .5602
+    OQSO for D_AES_BIN       using bits 13 to 17        141755  -.523  .3004
+    OQSO for D_AES_BIN       using bits 12 to 16        141828  -.276  .3914
+    OQSO for D_AES_BIN       using bits 11 to 15        141818  -.310  .3784
+    OQSO for D_AES_BIN       using bits 10 to 14        141855  -.184  .4269
+    OQSO for D_AES_BIN       using bits  9 to 13        142117   .704  .7593
+    OQSO for D_AES_BIN       using bits  8 to 12        141980   .240  .5947
+    OQSO for D_AES_BIN       using bits  7 to 11        142137   .772  .7799
+    OQSO for D_AES_BIN       using bits  6 to 10        141977   .229  .5907
+    OQSO for D_AES_BIN       using bits  5 to  9        141405 -1.710  .0437
+    OQSO for D_AES_BIN       using bits  4 to  8        141747  -.550  .2911
+    OQSO for D_AES_BIN       using bits  3 to  7        142048   .470  .6808
+    OQSO for D_AES_BIN       using bits  2 to  6        142184   .931  .8241
+    OQSO for D_AES_BIN       using bits  1 to  5        141492 -1.415  .0786
+     DNA for D_AES_BIN       using bits 31 to 32        141312 -1.762  .0390
+     DNA for D_AES_BIN       using bits 30 to 31        142203   .866  .8068
+     DNA for D_AES_BIN       using bits 29 to 30        142383  1.397  .9188
+     DNA for D_AES_BIN       using bits 28 to 29        141886  -.069  .4726
+     DNA for D_AES_BIN       using bits 27 to 28        141787  -.361  .3591
+     DNA for D_AES_BIN       using bits 26 to 27        141175 -2.166  .0151
+     DNA for D_AES_BIN       using bits 25 to 26        142581  1.981  .9762
+     DNA for D_AES_BIN       using bits 24 to 25        141631  -.821  .2058
+     DNA for D_AES_BIN       using bits 23 to 24        142239   .972  .8346
+     DNA for D_AES_BIN       using bits 22 to 23        141798  -.328  .3713
+     DNA for D_AES_BIN       using bits 21 to 22        142441  1.568  .9416
+     DNA for D_AES_BIN       using bits 20 to 21        142323  1.220  .8888
+     DNA for D_AES_BIN       using bits 19 to 20        141597  -.921  .1784
+     DNA for D_AES_BIN       using bits 18 to 19        141593  -.933  .1754
+     DNA for D_AES_BIN       using bits 17 to 18        141393 -1.523  .0639
+     DNA for D_AES_BIN       using bits 16 to 17        141958   .144  .5571
+     DNA for D_AES_BIN       using bits 15 to 16        141808  -.299  .3825
+     DNA for D_AES_BIN       using bits 14 to 15        142492  1.719  .9572
+     DNA for D_AES_BIN       using bits 13 to 14        141824  -.252  .4006
+     DNA for D_AES_BIN       using bits 12 to 13        142074   .486  .6864
+     DNA for D_AES_BIN       using bits 11 to 12        141919   .029  .5114
+     DNA for D_AES_BIN       using bits 10 to 11        141693  -.638  .2617
+     DNA for D_AES_BIN       using bits  9 to 10        142096   .551  .7091
+     DNA for D_AES_BIN       using bits  8 to  9        142166   .757  .7755
+     DNA for D_AES_BIN       using bits  7 to  8        141968   .173  .5687
+     DNA for D_AES_BIN       using bits  6 to  7        142136   .669  .7481
+     DNA for D_AES_BIN       using bits  5 to  6        141730  -.529  .2984
+     DNA for D_AES_BIN       using bits  4 to  5        141590  -.942  .1731
+     DNA for D_AES_BIN       using bits  3 to  4        141960   .149  .5594
+     DNA for D_AES_BIN       using bits  2 to  3        141930   .061  .5243
+     DNA for D_AES_BIN       using bits  1 to  2        141720  -.558  .2883
+--------------------------------------------------------------------------------
+   Test results for D_AES_BIN      
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size:2560000
+                               chisquare  equiv normal  p-value
+  Results fo COUNT-THE-1's in successive bytes:
+ byte stream for D_AES_BIN        2394.91     -1.486      .068614
+ byte stream for D_AES_BIN        2476.67      -.330      .370716
+--------------------------------------------------------------------------------
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size: 256000
+                      chisquare  equiv normal  p value
+  Results for COUNT-THE-1's in specified bytes:
+           bits  1 to  8  2703.38      2.876      .997987
+           bits  2 to  9  2615.33      1.631      .948562
+           bits  3 to 10  2454.94      -.637      .261960
+           bits  4 to 11  2428.31     -1.014      .155340
+           bits  5 to 12  2553.88       .762      .776959
+           bits  6 to 13  2544.61       .631      .735954
+           bits  7 to 14  2439.22      -.860      .195012
+           bits  8 to 15  2433.51      -.940      .173525
+           bits  9 to 16  2411.48     -1.252      .105320
+           bits 10 to 17  2479.40      -.291      .385406
+           bits 11 to 18  2531.60       .447      .672518
+           bits 12 to 19  2496.17      -.054      .478375
+           bits 13 to 20  2534.59       .489      .687637
+           bits 14 to 21  2471.15      -.408      .341610
+           bits 15 to 22  2531.50       .446      .672033
+           bits 16 to 23  2504.17       .059      .523523
+           bits 17 to 24  2572.10      1.020      .846053
+           bits 18 to 25  2540.99       .580      .718923
+           bits 19 to 26  2541.38       .585      .720799
+           bits 20 to 27  2564.54       .913      .819293
+           bits 21 to 28  2585.43      1.208      .886495
+           bits 22 to 29  2569.07       .977      .835678
+           bits 23 to 30  2543.84       .620      .732346
+           bits 24 to 31  2523.53       .333      .630328
+           bits 25 to 32  2553.56       .757      .775612
+--------------------------------------------------------------------------------
+           CDPARK: result of ten tests on file D_AES_BIN      
+            Of 12,000 tries, the average no. of successes
+                 should be 3523 with sigma=21.9
+            Successes: 3541    z-score:   .822 p-value: .794438
+            Successes: 3574    z-score:  2.329 p-value: .990064
+            Successes: 3503    z-score:  -.913 p-value: .180558
+            Successes: 3498    z-score: -1.142 p-value: .126820
+            Successes: 3530    z-score:   .320 p-value: .625377
+            Successes: 3533    z-score:   .457 p-value: .676028
+            Successes: 3537    z-score:   .639 p-value: .738676
+            Successes: 3559    z-score:  1.644 p-value: .949895
+            Successes: 3506    z-score:  -.776 p-value: .218799
+            Successes: 3545    z-score:  1.005 p-value: .842447
+ 
+           square size   avg. no.  parked   sample sigma
+             100.            3532.600       23.316
+            KSTEST for the above 10: p=  .746523
+--------------------------------------------------------------------------------
+               This is the MINIMUM DISTANCE test
+              for random integers in the file D_AES_BIN      
+     Sample no.    d^2     avg     equiv uni            
+           5     .2450   1.1441     .218219
+          10     .1202    .7832     .113827
+          15     .8606    .8459     .578913
+          20     .2030    .7426     .184588
+          25     .0638    .8625     .062064
+          30     .2261    .8469     .203290
+          35    1.9636    .9659     .861030
+          40     .9164    .9130     .601887
+          45    7.7305   1.0440     .999578
+          50     .4383   1.0409     .356274
+          55     .4917   1.0261     .389900
+          60    1.0019   1.0252     .634651
+          65     .3798   1.0037     .317275
+          70     .4933   1.0248     .390919
+          75     .9461   1.0202     .613602
+          80    1.1303   1.0308     .678892
+          85     .3934    .9937     .326605
+          90    5.5819   1.0492     .996339
+          95     .8895   1.0698     .590982
+         100     .6761   1.0905     .493118
+     MINIMUM DISTANCE TEST for D_AES_BIN      
+          Result of KS test on 20 transformed mindist^2's:
+                                  p-value= .675715
+--------------------------------------------------------------------------------
+               The 3DSPHERES test for file D_AES_BIN      
+ sample no:  1     r^3= 187.206     p-value= .99805
+ sample no:  2     r^3=  15.865     p-value= .41071
+ sample no:  3     r^3=  13.495     p-value= .36226
+ sample no:  4     r^3=  15.669     p-value= .40685
+ sample no:  5     r^3=  53.870     p-value= .83398
+ sample no:  6     r^3=  33.723     p-value= .67506
+ sample no:  7     r^3=   9.546     p-value= .27255
+ sample no:  8     r^3=  58.864     p-value= .85944
+ sample no:  9     r^3=  24.844     p-value= .56314
+ sample no: 10     r^3=   9.197     p-value= .26403
+ sample no: 11     r^3=  25.945     p-value= .57888
+ sample no: 12     r^3=  67.978     p-value= .89627
+ sample no: 13     r^3=   5.521     p-value= .16809
+ sample no: 14     r^3=   4.450     p-value= .13785
+ sample no: 15     r^3=  25.839     p-value= .57738
+ sample no: 16     r^3=  23.668     p-value= .54566
+ sample no: 17     r^3=  49.200     p-value= .80602
+ sample no: 18     r^3=   5.485     p-value= .16709
+ sample no: 19     r^3=   2.528     p-value= .08082
+ sample no: 20     r^3=  55.625     p-value= .84342
+       3DSPHERES test for file D_AES_BIN            p-value= .117535
+--------------------------------------------------------------------------------
+            RESULTS OF SQUEEZE TEST FOR D_AES_BIN      
+         Table of standardized frequency counts
+     ( (obs-exp)/sqrt(exp) )^2
+        for j taking values <=6,7,8,...,47,>=48:
+     2.0      .5    -1.8    -2.6     -.3     1.6
+    -1.8     -.2     1.4    -1.9     2.0      .4
+     -.3    -1.1      .1     -.8     1.3     -.8
+      .4     -.6     -.7     2.1    -1.2      .4
+      .7    -1.1    -1.0      .6      .0     2.1
+      .1     1.0     1.4     -.4      .1      .2
+      .3     -.4     -.4      .4     1.6     1.0
+      .8
+           Chi-square with 42 degrees of freedom: 57.712
+              z-score=  1.714  p-value= .946194
+______________________________________________________________
+--------------------------------------------------------------------------------
+                Test no.  1      p-value  .539464
+                Test no.  2      p-value  .944504
+                Test no.  3      p-value  .262454
+                Test no.  4      p-value  .970370
+                Test no.  5      p-value  .816837
+                Test no.  6      p-value  .797491
+                Test no.  7      p-value  .899567
+                Test no.  8      p-value  .866904
+                Test no.  9      p-value  .012614
+                Test no. 10      p-value  .249871
+   Results of the OSUM test for D_AES_BIN      
+        KSTEST on the above 10 p-values:  .898708
+--------------------------------------------------------------------------------
+           The RUNS test for file D_AES_BIN      
+     Up and down runs in a sample of 10000
+_________________________________________________ 
+                 Run test for D_AES_BIN      :
+       runs up; ks test for 10 p's: .724882
+     runs down; ks test for 10 p's: .877110
+                 Run test for D_AES_BIN      :
+       runs up; ks test for 10 p's: .901917
+     runs down; ks test for 10 p's: .450958
+--------------------------------------------------------------------------------
+                Results of craps test for D_AES_BIN      
+  No. of wins:  Observed Expected
+                                98308    98585.86
+ Chisq=  22.52 for 20 degrees of freedom, p=  .68724
+               Throws Observed Expected  Chisq     Sum
+            SUMMARY  FOR D_AES_BIN      
+                p-value for no. of wins: .106980
+                p-value for throws/game: .687237
+  Test completed.  File D_AES_BIN      
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

@@ -1,0 +1,333 @@
+ BIRTHDAY SPACINGS TEST, M= 512 N=2**24 LAMBDA=  2.0000
+           D_TRNG_BIN      using bits  1 to 24 p-value=  .920030
+           D_TRNG_BIN      using bits  2 to 25 p-value=  .054316
+           D_TRNG_BIN      using bits  3 to 26 p-value=  .344054
+           D_TRNG_BIN      using bits  4 to 27 p-value=  .516968
+           D_TRNG_BIN      using bits  5 to 28 p-value=  .628892
+           D_TRNG_BIN      using bits  6 to 29 p-value=  .355100
+           D_TRNG_BIN      using bits  7 to 30 p-value=  .527849
+           D_TRNG_BIN      using bits  8 to 31 p-value=  .163957
+           D_TRNG_BIN      using bits  9 to 32 p-value=  .396873
+   The 9 p-values were
+        .920030   .054316   .344054   .516968   .628892
+        .355100   .527849   .163957   .396873
+  A KSTEST for the 9 p-values yields  .310593
+--------------------------------------------------------------------------------
+           OPERM5 test for file D_TRNG_BIN     
+ chisquare for 99 degrees of freedom=113.789; p-value= .853136
+           OPERM5 test for file D_TRNG_BIN     
+ chisquare for 99 degrees of freedom= 71.652; p-value= .017475
+--------------------------------------------------------------------------------
+    Binary rank test for D_TRNG_BIN     
+         Rank test for 31x31 binary matrices:
+        rows from leftmost 31 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        28       195     211.4  1.274968    1.275
+        29      5108    5134.0   .131775    1.407
+        30     23058   23103.0   .087833    1.495
+        31     11639   11551.5   .662422    2.157
+  chisquare= 2.157 for 3 d. of f.; p-value= .530493
+    Binary rank test for D_TRNG_BIN     
+         Rank test for 32x32 binary matrices:
+        rows from leftmost 32 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        29       199     211.4   .729394     .729
+        30      5209    5134.0  1.095335    1.825
+        31     23163   23103.0   .155580    1.980
+        32     11429   11551.5  1.299589    3.280
+  chisquare= 3.280 for 3 d. of f.; p-value= .684617
+--------------------------------------------------------------------------------
+ b-rank test for bits  1 to  8 p=1-exp(-SUM/2)= .38130
+ b-rank test for bits  2 to  9 p=1-exp(-SUM/2)= .73589
+ b-rank test for bits  3 to 10 p=1-exp(-SUM/2)= .49902
+ b-rank test for bits  4 to 11 p=1-exp(-SUM/2)= .75268
+ b-rank test for bits  5 to 12 p=1-exp(-SUM/2)= .44192
+ b-rank test for bits  6 to 13 p=1-exp(-SUM/2)= .67437
+ b-rank test for bits  7 to 14 p=1-exp(-SUM/2)= .48737
+ b-rank test for bits  8 to 15 p=1-exp(-SUM/2)= .71922
+ b-rank test for bits  9 to 16 p=1-exp(-SUM/2)= .22117
+ b-rank test for bits 10 to 17 p=1-exp(-SUM/2)= .86003
+ b-rank test for bits 11 to 18 p=1-exp(-SUM/2)= .94808
+ b-rank test for bits 12 to 19 p=1-exp(-SUM/2)= .72402
+ b-rank test for bits 13 to 20 p=1-exp(-SUM/2)= .12499
+ b-rank test for bits 14 to 21 p=1-exp(-SUM/2)= .60550
+ b-rank test for bits 15 to 22 p=1-exp(-SUM/2)= .28779
+ b-rank test for bits 16 to 23 p=1-exp(-SUM/2)= .34174
+ b-rank test for bits 17 to 24 p=1-exp(-SUM/2)= .41742
+ b-rank test for bits 18 to 25 p=1-exp(-SUM/2)= .21569
+ b-rank test for bits 19 to 26 p=1-exp(-SUM/2)= .18127
+ b-rank test for bits 20 to 27 p=1-exp(-SUM/2)= .26779
+ b-rank test for bits 21 to 28 p=1-exp(-SUM/2)= .18952
+ b-rank test for bits 22 to 29 p=1-exp(-SUM/2)= .17364
+ b-rank test for bits 23 to 30 p=1-exp(-SUM/2)= .07205
+ b-rank test for bits 24 to 31 p=1-exp(-SUM/2)= .92333
+ b-rank test for bits 25 to 32 p=1-exp(-SUM/2)= .27760
+   TEST SUMMARY, 25 tests on 100,000 random 6x8 matrices
+ These should be 25 uniform [0,1] random variables:
+     .381300     .735895     .499019     .752679     .441923
+     .674368     .487368     .719220     .221170     .860032
+     .948075     .724018     .124993     .605501     .287791
+     .341737     .417419     .215688     .181266     .267786
+     .189517     .173638     .072048     .923329     .277596
+   brank test summary for D_TRNG_BIN     
+       The KS test for those 25 supposed UNI's yields
+                    KS p-value= .413886
+--------------------------------------------------------------------------------
+  No. missing words should average  141909. with sigma=428.
+ tst no  1:  141853 missing words,    -.13 sigmas from mean, p-value= .44765
+ tst no  2:  141846 missing words,    -.15 sigmas from mean, p-value= .44119
+ tst no  3:  142949 missing words,    2.43 sigmas from mean, p-value= .99243
+ tst no  4:  141527 missing words,    -.89 sigmas from mean, p-value= .18585
+ tst no  5:  141147 missing words,   -1.78 sigmas from mean, p-value= .03744
+ tst no  6:  141496 missing words,    -.97 sigmas from mean, p-value= .16709
+ tst no  7:  142354 missing words,    1.04 sigmas from mean, p-value= .85059
+ tst no  8:  141670 missing words,    -.56 sigmas from mean, p-value= .28802
+ tst no  9:  142236 missing words,     .76 sigmas from mean, p-value= .77734
+ tst no 10:  141644 missing words,    -.62 sigmas from mean, p-value= .26765
+ tst no 11:  142491 missing words,    1.36 sigmas from mean, p-value= .91293
+ tst no 12:  141505 missing words,    -.94 sigmas from mean, p-value= .17241
+ tst no 13:  141728 missing words,    -.42 sigmas from mean, p-value= .33591
+ tst no 14:  142057 missing words,     .35 sigmas from mean, p-value= .63496
+ tst no 15:  142311 missing words,     .94 sigmas from mean, p-value= .82600
+ tst no 16:  141717 missing words,    -.45 sigmas from mean, p-value= .32658
+ tst no 17:  141801 missing words,    -.25 sigmas from mean, p-value= .40009
+ tst no 18:  141885 missing words,    -.06 sigmas from mean, p-value= .47734
+ tst no 19:  141640 missing words,    -.63 sigmas from mean, p-value= .26459
+ tst no 20:  141558 missing words,    -.82 sigmas from mean, p-value= .20586
+--------------------------------------------------------------------------------
+    OPSO for D_TRNG_BIN      using bits 23 to 32        141146 -2.632  .0042
+    OPSO for D_TRNG_BIN      using bits 22 to 31        141494 -1.432  .0760
+    OPSO for D_TRNG_BIN      using bits 21 to 30        141701  -.718  .2363
+    OPSO for D_TRNG_BIN      using bits 20 to 29        141535 -1.291  .0984
+    OPSO for D_TRNG_BIN      using bits 19 to 28        141682  -.784  .2166
+    OPSO for D_TRNG_BIN      using bits 18 to 27        141831  -.270  .3935
+    OPSO for D_TRNG_BIN      using bits 17 to 26        142113   .702  .7588
+    OPSO for D_TRNG_BIN      using bits 16 to 25        141823  -.298  .3830
+    OPSO for D_TRNG_BIN      using bits 15 to 24        142347  1.509  .9344
+    OPSO for D_TRNG_BIN      using bits 14 to 23        141723  -.643  .2603
+    OPSO for D_TRNG_BIN      using bits 13 to 22        142100   .657  .7446
+    OPSO for D_TRNG_BIN      using bits 12 to 21        142345  1.502  .9335
+    OPSO for D_TRNG_BIN      using bits 11 to 20        141694  -.743  .2289
+    OPSO for D_TRNG_BIN      using bits 10 to 19        142116   .713  .7620
+    OPSO for D_TRNG_BIN      using bits  9 to 18        141224 -2.363  .0091
+    OPSO for D_TRNG_BIN      using bits  8 to 17        141528 -1.315  .0943
+    OPSO for D_TRNG_BIN      using bits  7 to 16        141977   .233  .5923
+    OPSO for D_TRNG_BIN      using bits  6 to 15        141907  -.008  .4968
+    OPSO for D_TRNG_BIN      using bits  5 to 14        141346 -1.943  .0260
+    OPSO for D_TRNG_BIN      using bits  4 to 13        141871  -.132  .4474
+    OPSO for D_TRNG_BIN      using bits  3 to 12        141536 -1.287  .0990
+    OPSO for D_TRNG_BIN      using bits  2 to 11        142271  1.247  .8938
+    OPSO for D_TRNG_BIN      using bits  1 to 10        142100   .657  .7446
+    OQSO for D_TRNG_BIN      using bits 28 to 32        141825  -.286  .3875
+    OQSO for D_TRNG_BIN      using bits 27 to 31        142621  2.412  .9921
+    OQSO for D_TRNG_BIN      using bits 26 to 30        141652  -.872  .1915
+    OQSO for D_TRNG_BIN      using bits 25 to 29        141563 -1.174  .1202
+    OQSO for D_TRNG_BIN      using bits 24 to 28        141522 -1.313  .0946
+    OQSO for D_TRNG_BIN      using bits 23 to 27        142017   .365  .6424
+    OQSO for D_TRNG_BIN      using bits 22 to 26        141951   .141  .5562
+    OQSO for D_TRNG_BIN      using bits 21 to 25        141696  -.723  .2348
+    OQSO for D_TRNG_BIN      using bits 20 to 24        142207  1.009  .8435
+    OQSO for D_TRNG_BIN      using bits 19 to 23        142109   .677  .7508
+    OQSO for D_TRNG_BIN      using bits 18 to 22        142192   .958  .8310
+    OQSO for D_TRNG_BIN      using bits 17 to 21        141101 -2.740  .0031
+    OQSO for D_TRNG_BIN      using bits 16 to 20        141755  -.523  .3004
+    OQSO for D_TRNG_BIN      using bits 15 to 19        141635  -.930  .1762
+    OQSO for D_TRNG_BIN      using bits 14 to 18        141926   .057  .5225
+    OQSO for D_TRNG_BIN      using bits 13 to 17        142029   .406  .6575
+    OQSO for D_TRNG_BIN      using bits 12 to 16        141554 -1.205  .1142
+    OQSO for D_TRNG_BIN      using bits 11 to 15        141540 -1.252  .1053
+    OQSO for D_TRNG_BIN      using bits 10 to 14        141881  -.096  .4617
+    OQSO for D_TRNG_BIN      using bits  9 to 13        141718  -.649  .2583
+    OQSO for D_TRNG_BIN      using bits  8 to 12        142174   .897  .8152
+    OQSO for D_TRNG_BIN      using bits  7 to 11        142086   .599  .7254
+    OQSO for D_TRNG_BIN      using bits  6 to 10        141532 -1.279  .1004
+    OQSO for D_TRNG_BIN      using bits  5 to  9        141607 -1.025  .1527
+    OQSO for D_TRNG_BIN      using bits  4 to  8        142143   .792  .7859
+    OQSO for D_TRNG_BIN      using bits  3 to  7        141977   .229  .5907
+    OQSO for D_TRNG_BIN      using bits  2 to  6        142175   .901  .8161
+    OQSO for D_TRNG_BIN      using bits  1 to  5        142122   .721  .7645
+     DNA for D_TRNG_BIN      using bits 31 to 32        142163   .748  .7729
+     DNA for D_TRNG_BIN      using bits 30 to 31        141369 -1.594  .0555
+     DNA for D_TRNG_BIN      using bits 29 to 30        142457  1.616  .9469
+     DNA for D_TRNG_BIN      using bits 28 to 29        142155   .725  .7657
+     DNA for D_TRNG_BIN      using bits 27 to 28        141963   .158  .5629
+     DNA for D_TRNG_BIN      using bits 26 to 27        142127   .642  .7396
+     DNA for D_TRNG_BIN      using bits 25 to 26        141318 -1.744  .0406
+     DNA for D_TRNG_BIN      using bits 24 to 25        142197   .849  .8019
+     DNA for D_TRNG_BIN      using bits 23 to 24        142155   .725  .7657
+     DNA for D_TRNG_BIN      using bits 22 to 23        141906  -.010  .4961
+     DNA for D_TRNG_BIN      using bits 21 to 22        142934  3.023  .9987
+     DNA for D_TRNG_BIN      using bits 20 to 21        142197   .849  .8019
+     DNA for D_TRNG_BIN      using bits 19 to 20        141129 -2.302  .0107
+     DNA for D_TRNG_BIN      using bits 18 to 19        142393  1.427  .9232
+     DNA for D_TRNG_BIN      using bits 17 to 18        141654  -.753  .2257
+     DNA for D_TRNG_BIN      using bits 16 to 17        142153   .719  .7639
+     DNA for D_TRNG_BIN      using bits 15 to 16        141569 -1.004  .1577
+     DNA for D_TRNG_BIN      using bits 14 to 15        141445 -1.370  .0854
+     DNA for D_TRNG_BIN      using bits 13 to 14        141600  -.912  .1808
+     DNA for D_TRNG_BIN      using bits 12 to 13        141900  -.028  .4890
+     DNA for D_TRNG_BIN      using bits 11 to 12        141911   .005  .5020
+     DNA for D_TRNG_BIN      using bits 10 to 11        141738  -.505  .3066
+     DNA for D_TRNG_BIN      using bits  9 to 10        141364 -1.609  .0538
+     DNA for D_TRNG_BIN      using bits  8 to  9        141842  -.199  .4213
+     DNA for D_TRNG_BIN      using bits  7 to  8        142048   .409  .6588
+     DNA for D_TRNG_BIN      using bits  6 to  7        142000   .267  .6054
+     DNA for D_TRNG_BIN      using bits  5 to  6        141846  -.187  .4259
+     DNA for D_TRNG_BIN      using bits  4 to  5        141782  -.376  .3536
+     DNA for D_TRNG_BIN      using bits  3 to  4        141502 -1.202  .1148
+     DNA for D_TRNG_BIN      using bits  2 to  3        142078   .498  .6906
+     DNA for D_TRNG_BIN      using bits  1 to  2        142254  1.017  .8454
+--------------------------------------------------------------------------------
+   Test results for D_TRNG_BIN     
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size:2560000
+                               chisquare  equiv normal  p-value
+  Results fo COUNT-THE-1's in successive bytes:
+ byte stream for D_TRNG_BIN       2545.21       .639      .738727
+ byte stream for D_TRNG_BIN       2588.50      1.252      .894639
+--------------------------------------------------------------------------------
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size: 256000
+                      chisquare  equiv normal  p value
+  Results for COUNT-THE-1's in specified bytes:
+           bits  1 to  8  2514.25       .202      .579882
+           bits  2 to  9  2541.23       .583      .720092
+           bits  3 to 10  2461.28      -.548      .292006
+           bits  4 to 11  2461.89      -.539      .294947
+           bits  5 to 12  2602.88      1.455      .927159
+           bits  6 to 13  2608.27      1.531      .937140
+           bits  7 to 14  2380.26     -1.693      .045186
+           bits  8 to 15  2582.98      1.174      .879719
+           bits  9 to 16  2514.29       .202      .580071
+           bits 10 to 17  2463.39      -.518      .302311
+           bits 11 to 18  2559.88       .847      .801449
+           bits 12 to 19  2362.58     -1.943      .025987
+           bits 13 to 20  2575.21      1.064      .856243
+           bits 14 to 21  2251.12     -3.520      .000216
+           bits 15 to 22  2631.58      1.861      .968615
+           bits 16 to 23  2530.85       .436      .668689
+           bits 17 to 24  2614.69      1.622      .947598
+           bits 18 to 25  2547.81       .676      .750533
+           bits 19 to 26  2586.91      1.229      .890468
+           bits 20 to 27  2374.27     -1.778      .037694
+           bits 21 to 28  2471.41      -.404      .342985
+           bits 22 to 29  2599.57      1.408      .920452
+           bits 23 to 30  2470.02      -.424      .335782
+           bits 24 to 31  2532.16       .455      .675399
+           bits 25 to 32  2488.02      -.169      .432738
+--------------------------------------------------------------------------------
+           CDPARK: result of ten tests on file D_TRNG_BIN     
+            Of 12,000 tries, the average no. of successes
+                 should be 3523 with sigma=21.9
+            Successes: 3505    z-score:  -.822 p-value: .205562
+            Successes: 3501    z-score: -1.005 p-value: .157553
+            Successes: 3514    z-score:  -.411 p-value: .340551
+            Successes: 3462    z-score: -2.785 p-value: .002673
+            Successes: 3520    z-score:  -.137 p-value: .445521
+            Successes: 3479    z-score: -2.009 p-value: .022262
+            Successes: 3548    z-score:  1.142 p-value: .873180
+            Successes: 3554    z-score:  1.416 p-value: .921543
+            Successes: 3510    z-score:  -.594 p-value: .276387
+            Successes: 3509    z-score:  -.639 p-value: .261324
+ 
+           square size   avg. no.  parked   sample sigma
+             100.            3510.200       26.214
+            KSTEST for the above 10: p=  .916003
+--------------------------------------------------------------------------------
+               This is the MINIMUM DISTANCE test
+              for random integers in the file D_TRNG_BIN     
+     Sample no.    d^2     avg     equiv uni            
+           5     .6759    .5259     .493029
+          10    3.2054   1.3044     .960107
+          15     .9125   1.1172     .600321
+          20     .8407    .9966     .570407
+          25     .5478    .9015     .423373
+          30     .6781    .8533     .494151
+          35     .3716    .8880     .311630
+          40    1.6777    .8986     .814773
+          45     .2644    .8538     .233315
+          50     .7774    .9017     .542176
+          55    2.7860    .9995     .939191
+          60    1.6395    .9821     .807521
+          65     .2341    .9907     .209616
+          70    2.1955    .9938     .889917
+          75    1.8406    .9945     .842736
+          80     .6995   1.0266     .504900
+          85     .1687   1.0307     .155963
+          90     .7790    .9959     .542906
+          95     .8901    .9753     .591203
+         100     .4623    .9503     .371607
+     MINIMUM DISTANCE TEST for D_TRNG_BIN     
+          Result of KS test on 20 transformed mindist^2's:
+                                  p-value= .892889
+--------------------------------------------------------------------------------
+               The 3DSPHERES test for file D_TRNG_BIN     
+ sample no:  1     r^3=  22.357     p-value= .52538
+ sample no:  2     r^3=  31.208     p-value= .64664
+ sample no:  3     r^3=  60.202     p-value= .86557
+ sample no:  4     r^3=   8.329     p-value= .24243
+ sample no:  5     r^3=  59.036     p-value= .86024
+ sample no:  6     r^3=   2.986     p-value= .09474
+ sample no:  7     r^3=    .676     p-value= .02228
+ sample no:  8     r^3=   4.577     p-value= .14149
+ sample no:  9     r^3=  29.917     p-value= .63110
+ sample no: 10     r^3=  29.278     p-value= .62316
+ sample no: 11     r^3=   6.299     p-value= .18938
+ sample no: 12     r^3=  26.767     p-value= .59026
+ sample no: 13     r^3=  18.322     p-value= .45704
+ sample no: 14     r^3=  45.455     p-value= .78023
+ sample no: 15     r^3= 109.516     p-value= .97402
+ sample no: 16     r^3=   2.541     p-value= .08120
+ sample no: 17     r^3=  28.051     p-value= .60743
+ sample no: 18     r^3=  72.072     p-value= .90950
+ sample no: 19     r^3=  12.379     p-value= .33808
+ sample no: 20     r^3=   7.783     p-value= .22852
+       3DSPHERES test for file D_TRNG_BIN           p-value= .012561
+--------------------------------------------------------------------------------
+            RESULTS OF SQUEEZE TEST FOR D_TRNG_BIN     
+         Table of standardized frequency counts
+     ( (obs-exp)/sqrt(exp) )^2
+        for j taking values <=6,7,8,...,47,>=48:
+    -1.5    -1.2     -.1    -1.4     -.5     2.9
+      .4     -.2      .5      .2      .6     1.3
+      .4     -.4     -.4    -1.0     1.1      .3
+    -1.6      .7     -.2      .3     -.2     -.6
+      .0     1.3     -.5     -.9      .6    -1.2
+    -1.0     -.8      .7      .3     -.2    -1.4
+      .0    -1.0      .9      .4      .1    -1.0
+     -.1
+           Chi-square with 42 degrees of freedom: 34.860
+              z-score=  -.779  p-value= .225076
+______________________________________________________________
+--------------------------------------------------------------------------------
+                Test no.  1      p-value  .299467
+                Test no.  2      p-value  .941009
+                Test no.  3      p-value  .875789
+                Test no.  4      p-value  .171225
+                Test no.  5      p-value  .521128
+                Test no.  6      p-value  .298437
+                Test no.  7      p-value  .677626
+                Test no.  8      p-value  .687488
+                Test no.  9      p-value  .490216
+                Test no. 10      p-value  .649472
+   Results of the OSUM test for D_TRNG_BIN     
+        KSTEST on the above 10 p-values:  .270320
+--------------------------------------------------------------------------------
+           The RUNS test for file D_TRNG_BIN     
+     Up and down runs in a sample of 10000
+_________________________________________________ 
+                 Run test for D_TRNG_BIN     :
+       runs up; ks test for 10 p's: .408994
+     runs down; ks test for 10 p's: .768404
+                 Run test for D_TRNG_BIN     :
+       runs up; ks test for 10 p's: .728238
+     runs down; ks test for 10 p's: .476043
+--------------------------------------------------------------------------------
+                Results of craps test for D_TRNG_BIN     
+  No. of wins:  Observed Expected
+                                98779    98585.86
+ Chisq=  26.00 for 20 degrees of freedom, p=  .83425
+               Throws Observed Expected  Chisq     Sum
+            SUMMARY  FOR D_TRNG_BIN     
+                p-value for no. of wins: .806161
+                p-value for throws/game: .834245
+  Test completed.  File D_TRNG_BIN     
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

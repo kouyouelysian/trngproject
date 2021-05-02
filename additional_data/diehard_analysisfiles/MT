@@ -1,0 +1,333 @@
+ BIRTHDAY SPACINGS TEST, M= 512 N=2**24 LAMBDA=  2.0000
+           D_MT_BIN        using bits  1 to 24 p-value=  .116449
+           D_MT_BIN        using bits  2 to 25 p-value=  .428286
+           D_MT_BIN        using bits  3 to 26 p-value=  .522870
+           D_MT_BIN        using bits  4 to 27 p-value=  .599828
+           D_MT_BIN        using bits  5 to 28 p-value=  .567755
+           D_MT_BIN        using bits  6 to 29 p-value=  .271297
+           D_MT_BIN        using bits  7 to 30 p-value=  .101649
+           D_MT_BIN        using bits  8 to 31 p-value=  .767923
+           D_MT_BIN        using bits  9 to 32 p-value=  .806414
+   The 9 p-values were
+        .116449   .428286   .522870   .599828   .567755
+        .271297   .101649   .767923   .806414
+  A KSTEST for the 9 p-values yields  .151258
+--------------------------------------------------------------------------------
+           OPERM5 test for file D_MT_BIN       
+ chisquare for 99 degrees of freedom= 82.027; p-value= .108383
+           OPERM5 test for file D_MT_BIN       
+ chisquare for 99 degrees of freedom=126.428; p-value= .967116
+--------------------------------------------------------------------------------
+    Binary rank test for D_MT_BIN       
+         Rank test for 31x31 binary matrices:
+        rows from leftmost 31 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        28       211     211.4   .000826     .001
+        29      5126    5134.0   .012498     .013
+        30     23130   23103.0   .031445     .045
+        31     11533   11551.5   .029706     .074
+  chisquare=  .074 for 3 d. of f.; p-value= .397751
+    Binary rank test for D_MT_BIN       
+         Rank test for 32x32 binary matrices:
+        rows from leftmost 32 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        29       226     211.4  1.005753    1.006
+        30      5061    5134.0  1.038272    2.044
+        31     23091   23103.0   .006282    2.050
+        32     11622   11551.5   .429970    2.480
+  chisquare= 2.480 for 3 d. of f.; p-value= .578775
+--------------------------------------------------------------------------------
+ b-rank test for bits  1 to  8 p=1-exp(-SUM/2)= .65989
+ b-rank test for bits  2 to  9 p=1-exp(-SUM/2)= .96636
+ b-rank test for bits  3 to 10 p=1-exp(-SUM/2)= .43396
+ b-rank test for bits  4 to 11 p=1-exp(-SUM/2)= .82424
+ b-rank test for bits  5 to 12 p=1-exp(-SUM/2)= .05231
+ b-rank test for bits  6 to 13 p=1-exp(-SUM/2)= .93184
+ b-rank test for bits  7 to 14 p=1-exp(-SUM/2)= .91857
+ b-rank test for bits  8 to 15 p=1-exp(-SUM/2)= .03467
+ b-rank test for bits  9 to 16 p=1-exp(-SUM/2)= .16445
+ b-rank test for bits 10 to 17 p=1-exp(-SUM/2)= .21537
+ b-rank test for bits 11 to 18 p=1-exp(-SUM/2)= .81251
+ b-rank test for bits 12 to 19 p=1-exp(-SUM/2)= .62505
+ b-rank test for bits 13 to 20 p=1-exp(-SUM/2)= .70577
+ b-rank test for bits 14 to 21 p=1-exp(-SUM/2)= .58351
+ b-rank test for bits 15 to 22 p=1-exp(-SUM/2)= .95145
+ b-rank test for bits 16 to 23 p=1-exp(-SUM/2)= .44779
+ b-rank test for bits 17 to 24 p=1-exp(-SUM/2)= .28068
+ b-rank test for bits 18 to 25 p=1-exp(-SUM/2)= .54967
+ b-rank test for bits 19 to 26 p=1-exp(-SUM/2)= .59152
+ b-rank test for bits 20 to 27 p=1-exp(-SUM/2)= .99415
+ b-rank test for bits 21 to 28 p=1-exp(-SUM/2)= .09691
+ b-rank test for bits 22 to 29 p=1-exp(-SUM/2)= .61422
+ b-rank test for bits 23 to 30 p=1-exp(-SUM/2)= .81926
+ b-rank test for bits 24 to 31 p=1-exp(-SUM/2)= .15439
+ b-rank test for bits 25 to 32 p=1-exp(-SUM/2)= .26767
+   TEST SUMMARY, 25 tests on 100,000 random 6x8 matrices
+ These should be 25 uniform [0,1] random variables:
+     .659887     .966359     .433955     .824244     .052313
+     .931836     .918566     .034674     .164452     .215374
+     .812511     .625051     .705766     .583512     .951454
+     .447794     .280679     .549668     .591520     .994152
+     .096913     .614223     .819261     .154388     .267674
+   brank test summary for D_MT_BIN       
+       The KS test for those 25 supposed UNI's yields
+                    KS p-value= .431671
+--------------------------------------------------------------------------------
+  No. missing words should average  141909. with sigma=428.
+ tst no  1:  142117 missing words,     .49 sigmas from mean, p-value= .68624
+ tst no  2:  140954 missing words,   -2.23 sigmas from mean, p-value= .01281
+ tst no  3:  142631 missing words,    1.69 sigmas from mean, p-value= .95412
+ tst no  4:  142101 missing words,     .45 sigmas from mean, p-value= .67286
+ tst no  5:  142005 missing words,     .22 sigmas from mean, p-value= .58844
+ tst no  6:  141382 missing words,   -1.23 sigmas from mean, p-value= .10896
+ tst no  7:  141566 missing words,    -.80 sigmas from mean, p-value= .21123
+ tst no  8:  141352 missing words,   -1.30 sigmas from mean, p-value= .09643
+ tst no  9:  142264 missing words,     .83 sigmas from mean, p-value= .79636
+ tst no 10:  141943 missing words,     .08 sigmas from mean, p-value= .53135
+ tst no 11:  142563 missing words,    1.53 sigmas from mean, p-value= .93665
+ tst no 12:  142081 missing words,     .40 sigmas from mean, p-value= .65583
+ tst no 13:  142004 missing words,     .22 sigmas from mean, p-value= .58753
+ tst no 14:  140905 missing words,   -2.35 sigmas from mean, p-value= .00947
+ tst no 15:  141721 missing words,    -.44 sigmas from mean, p-value= .32996
+ tst no 16:  142535 missing words,    1.46 sigmas from mean, p-value= .92811
+ tst no 17:  141520 missing words,    -.91 sigmas from mean, p-value= .18150
+ tst no 18:  142143 missing words,     .55 sigmas from mean, p-value= .70745
+ tst no 19:  142126 missing words,     .51 sigmas from mean, p-value= .69366
+ tst no 20:  140801 missing words,   -2.59 sigmas from mean, p-value= .00481
+--------------------------------------------------------------------------------
+    OPSO for D_MT_BIN        using bits 23 to 32        142219  1.068  .8572
+    OPSO for D_MT_BIN        using bits 22 to 31        142092   .630  .7356
+    OPSO for D_MT_BIN        using bits 21 to 30        142485  1.985  .9764
+    OPSO for D_MT_BIN        using bits 20 to 29        142642  2.526  .9942
+    OPSO for D_MT_BIN        using bits 19 to 28        142374  1.602  .9455
+    OPSO for D_MT_BIN        using bits 18 to 27        141811  -.339  .3673
+    OPSO for D_MT_BIN        using bits 17 to 26        142268  1.237  .8919
+    OPSO for D_MT_BIN        using bits 16 to 25        142351  1.523  .9361
+    OPSO for D_MT_BIN        using bits 15 to 24        142788  3.030  .9988
+    OPSO for D_MT_BIN        using bits 14 to 23        142206  1.023  .8468
+    OPSO for D_MT_BIN        using bits 13 to 22        141849  -.208  .4176
+    OPSO for D_MT_BIN        using bits 12 to 21        141092 -2.818  .0024
+    OPSO for D_MT_BIN        using bits 11 to 20        142284  1.292  .9018
+    OPSO for D_MT_BIN        using bits 10 to 19        141811  -.339  .3673
+    OPSO for D_MT_BIN        using bits  9 to 18        142144   .809  .7908
+    OPSO for D_MT_BIN        using bits  8 to 17        141935   .089  .5353
+    OPSO for D_MT_BIN        using bits  7 to 16        142034   .430  .6664
+    OPSO for D_MT_BIN        using bits  6 to 15        142086   .609  .7288
+    OPSO for D_MT_BIN        using bits  5 to 14        141724  -.639  .2614
+    OPSO for D_MT_BIN        using bits  4 to 13        142393  1.668  .9523
+    OPSO for D_MT_BIN        using bits  3 to 12        142256  1.195  .8840
+    OPSO for D_MT_BIN        using bits  2 to 11        141913   .013  .5051
+    OPSO for D_MT_BIN        using bits  1 to 10        141778  -.453  .3253
+    OQSO for D_MT_BIN        using bits 28 to 32        141614 -1.001  .1584
+    OQSO for D_MT_BIN        using bits 27 to 31        141436 -1.605  .0543
+    OQSO for D_MT_BIN        using bits 26 to 30        142207  1.009  .8435
+    OQSO for D_MT_BIN        using bits 25 to 29        141690  -.743  .2286
+    OQSO for D_MT_BIN        using bits 24 to 28        142511  2.040  .9793
+    OQSO for D_MT_BIN        using bits 23 to 27        141941   .107  .5427
+    OQSO for D_MT_BIN        using bits 22 to 26        141817  -.313  .3771
+    OQSO for D_MT_BIN        using bits 21 to 25        141694  -.730  .2327
+    OQSO for D_MT_BIN        using bits 20 to 24        142074   .558  .7116
+    OQSO for D_MT_BIN        using bits 19 to 23        142280  1.257  .8955
+    OQSO for D_MT_BIN        using bits 18 to 22        141593 -1.072  .1418
+    OQSO for D_MT_BIN        using bits 17 to 21        142113   .690  .7550
+    OQSO for D_MT_BIN        using bits 16 to 20        142359  1.524  .9363
+    OQSO for D_MT_BIN        using bits 15 to 19        141638  -.920  .1789
+    OQSO for D_MT_BIN        using bits 14 to 18        142330  1.426  .9231
+    OQSO for D_MT_BIN        using bits 13 to 17        141594 -1.069  .1426
+    OQSO for D_MT_BIN        using bits 12 to 16        141818  -.310  .3784
+    OQSO for D_MT_BIN        using bits 11 to 15        141923   .046  .5185
+    OQSO for D_MT_BIN        using bits 10 to 14        142047   .467  .6796
+    OQSO for D_MT_BIN        using bits  9 to 13        142224  1.067  .8569
+    OQSO for D_MT_BIN        using bits  8 to 12        142212  1.026  .8476
+    OQSO for D_MT_BIN        using bits  7 to 11        141707  -.686  .2464
+    OQSO for D_MT_BIN        using bits  6 to 10        142212  1.026  .8476
+    OQSO for D_MT_BIN        using bits  5 to  9        142311  1.362  .9133
+    OQSO for D_MT_BIN        using bits  4 to  8        142545  2.155  .9844
+    OQSO for D_MT_BIN        using bits  3 to  7        142343  1.470  .9292
+    OQSO for D_MT_BIN        using bits  2 to  6        141791  -.401  .3442
+    OQSO for D_MT_BIN        using bits  1 to  5        141541 -1.249  .1059
+     DNA for D_MT_BIN        using bits 31 to 32        141693  -.638  .2617
+     DNA for D_MT_BIN        using bits 30 to 31        142330  1.241  .8927
+     DNA for D_MT_BIN        using bits 29 to 30        142002   .273  .6077
+     DNA for D_MT_BIN        using bits 28 to 29        142249  1.002  .8418
+     DNA for D_MT_BIN        using bits 27 to 28        141635  -.809  .2092
+     DNA for D_MT_BIN        using bits 26 to 27        141343 -1.671  .0474
+     DNA for D_MT_BIN        using bits 25 to 26        141963   .158  .5629
+     DNA for D_MT_BIN        using bits 24 to 25        142082   .509  .6947
+     DNA for D_MT_BIN        using bits 23 to 24        142038   .380  .6479
+     DNA for D_MT_BIN        using bits 22 to 23        142423  1.515  .9351
+     DNA for D_MT_BIN        using bits 21 to 22        141590  -.942  .1731
+     DNA for D_MT_BIN        using bits 20 to 21        141622  -.848  .1983
+     DNA for D_MT_BIN        using bits 19 to 20        142150   .710  .7611
+     DNA for D_MT_BIN        using bits 18 to 19        142195   .843  .8003
+     DNA for D_MT_BIN        using bits 17 to 18        141918   .026  .5102
+     DNA for D_MT_BIN        using bits 16 to 17        142083   .512  .6958
+     DNA for D_MT_BIN        using bits 15 to 16        142706  2.350  .9906
+     DNA for D_MT_BIN        using bits 14 to 15        142054   .427  .6652
+     DNA for D_MT_BIN        using bits 13 to 14        141730  -.529  .2984
+     DNA for D_MT_BIN        using bits 12 to 13        141650  -.765  .2221
+     DNA for D_MT_BIN        using bits 11 to 12        141766  -.423  .3362
+     DNA for D_MT_BIN        using bits 10 to 11        141860  -.146  .4422
+     DNA for D_MT_BIN        using bits  9 to 10        142080   .503  .6927
+     DNA for D_MT_BIN        using bits  8 to  9        142100   .562  .7131
+     DNA for D_MT_BIN        using bits  7 to  8        141789  -.355  .3613
+     DNA for D_MT_BIN        using bits  6 to  7        141985   .223  .5883
+     DNA for D_MT_BIN        using bits  5 to  6        141858  -.151  .4398
+     DNA for D_MT_BIN        using bits  4 to  5        141523 -1.140  .1272
+     DNA for D_MT_BIN        using bits  3 to  4        141368 -1.597  .0552
+     DNA for D_MT_BIN        using bits  2 to  3        141892  -.051  .4796
+     DNA for D_MT_BIN        using bits  1 to  2        141691  -.644  .2598
+--------------------------------------------------------------------------------
+   Test results for D_MT_BIN       
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size:2560000
+                               chisquare  equiv normal  p-value
+  Results fo COUNT-THE-1's in successive bytes:
+ byte stream for D_MT_BIN         2604.68      1.480      .930623
+ byte stream for D_MT_BIN         2380.06     -1.696      .044929
+--------------------------------------------------------------------------------
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size: 256000
+                      chisquare  equiv normal  p value
+  Results for COUNT-THE-1's in specified bytes:
+           bits  1 to  8  2577.09      1.090      .862180
+           bits  2 to  9  2457.62      -.599      .274470
+           bits  3 to 10  2680.47      2.552      .994649
+           bits  4 to 11  2454.06      -.650      .257964
+           bits  5 to 12  2512.72       .180      .571399
+           bits  6 to 13  2484.94      -.213      .415656
+           bits  7 to 14  2438.19      -.874      .191042
+           bits  8 to 15  2504.36       .062      .524598
+           bits  9 to 16  2484.13      -.224      .411193
+           bits 10 to 17  2429.29     -1.000      .158671
+           bits 11 to 18  2509.42       .133      .552963
+           bits 12 to 19  2588.97      1.258      .895841
+           bits 13 to 20  2449.23      -.718      .236398
+           bits 14 to 21  2491.54      -.120      .452407
+           bits 15 to 22  2423.10     -1.087      .138410
+           bits 16 to 23  2552.09       .737      .769343
+           bits 17 to 24  2499.82      -.003      .498984
+           bits 18 to 25  2463.77      -.512      .304178
+           bits 19 to 26  2423.71     -1.079      .140319
+           bits 20 to 27  2502.22       .031      .512522
+           bits 21 to 28  2529.48       .417      .661635
+           bits 22 to 29  2422.55     -1.095      .136687
+           bits 23 to 30  2583.88      1.186      .882225
+           bits 24 to 31  2478.88      -.299      .382602
+           bits 25 to 32  2471.80      -.399      .345000
+--------------------------------------------------------------------------------
+           CDPARK: result of ten tests on file D_MT_BIN       
+            Of 12,000 tries, the average no. of successes
+                 should be 3523 with sigma=21.9
+            Successes: 3549    z-score:  1.187 p-value: .882429
+            Successes: 3531    z-score:   .365 p-value: .642555
+            Successes: 3521    z-score:  -.091 p-value: .463618
+            Successes: 3530    z-score:   .320 p-value: .625377
+            Successes: 3525    z-score:   .091 p-value: .536382
+            Successes: 3481    z-score: -1.918 p-value: .027568
+            Successes: 3533    z-score:   .457 p-value: .676028
+            Successes: 3473    z-score: -2.283 p-value: .011212
+            Successes: 3531    z-score:   .365 p-value: .642555
+            Successes: 3518    z-score:  -.228 p-value: .409702
+ 
+           square size   avg. no.  parked   sample sigma
+             100.            3519.200       22.578
+            KSTEST for the above 10: p=  .594782
+--------------------------------------------------------------------------------
+               This is the MINIMUM DISTANCE test
+              for random integers in the file D_MT_BIN       
+     Sample no.    d^2     avg     equiv uni            
+           5     .2612    .4259     .230878
+          10     .3149    .7025     .271265
+          15    1.5373   1.1988     .786699
+          20     .0240   1.1495     .023868
+          25     .1565   1.0221     .145502
+          30    1.6997   1.0716     .818815
+          35    1.0584   1.0522     .654843
+          40     .3916   1.0304     .325376
+          45    2.9180   1.1419     .946745
+          50    1.1504   1.1134     .685304
+          55     .2138   1.1156     .193336
+          60     .0575   1.1068     .056104
+          65    1.8932   1.1642     .850830
+          70     .8605   1.1215     .578861
+          75    2.7894   1.1536     .939397
+          80    1.6444   1.1550     .808466
+          85     .6990   1.1548     .504680
+          90     .0320   1.1400     .031667
+          95    1.2094   1.1448     .703439
+         100     .4230   1.1199     .346340
+     MINIMUM DISTANCE TEST for D_MT_BIN       
+          Result of KS test on 20 transformed mindist^2's:
+                                  p-value= .890522
+--------------------------------------------------------------------------------
+               The 3DSPHERES test for file D_MT_BIN       
+ sample no:  1     r^3=  36.975     p-value= .70844
+ sample no:  2     r^3=    .745     p-value= .02454
+ sample no:  3     r^3=  69.643     p-value= .90187
+ sample no:  4     r^3=    .749     p-value= .02465
+ sample no:  5     r^3=   5.472     p-value= .16673
+ sample no:  6     r^3=  35.127     p-value= .68991
+ sample no:  7     r^3=   3.767     p-value= .11801
+ sample no:  8     r^3=  25.303     p-value= .56977
+ sample no:  9     r^3= 215.084     p-value= .99923
+ sample no: 10     r^3=  10.024     p-value= .28403
+ sample no: 11     r^3=  44.261     p-value= .77130
+ sample no: 12     r^3=   8.149     p-value= .23787
+ sample no: 13     r^3=  17.035     p-value= .43325
+ sample no: 14     r^3=   7.275     p-value= .21534
+ sample no: 15     r^3=  38.710     p-value= .72482
+ sample no: 16     r^3=   2.517     p-value= .08049
+ sample no: 17     r^3=  29.990     p-value= .63200
+ sample no: 18     r^3=  85.411     p-value= .94198
+ sample no: 19     r^3=  20.091     p-value= .48813
+ sample no: 20     r^3=  44.221     p-value= .77100
+       3DSPHERES test for file D_MT_BIN             p-value= .239791
+--------------------------------------------------------------------------------
+            RESULTS OF SQUEEZE TEST FOR D_MT_BIN       
+         Table of standardized frequency counts
+     ( (obs-exp)/sqrt(exp) )^2
+        for j taking values <=6,7,8,...,47,>=48:
+     1.3     -.7     1.5     -.4     -.5     -.4
+     1.7      .8      .5    -1.1     -.2     -.4
+     1.7    -1.2     -.2     -.4    -2.1     -.5
+      .3      .6     1.6      .7     -.9     1.4
+     -.8      .7     -.6     -.2     2.2     -.7
+    -1.3     -.7     2.2    -1.1      .9      .4
+     1.2    -1.7     1.7     -.1    -1.3      .0
+     -.1
+           Chi-square with 42 degrees of freedom: 50.981
+              z-score=   .980  p-value= .838921
+______________________________________________________________
+--------------------------------------------------------------------------------
+                Test no.  1      p-value  .709317
+                Test no.  2      p-value  .504054
+                Test no.  3      p-value  .891426
+                Test no.  4      p-value  .719349
+                Test no.  5      p-value  .388743
+                Test no.  6      p-value  .031510
+                Test no.  7      p-value  .969687
+                Test no.  8      p-value  .550057
+                Test no.  9      p-value  .093467
+                Test no. 10      p-value  .502964
+   Results of the OSUM test for D_MT_BIN       
+        KSTEST on the above 10 p-values:  .112501
+--------------------------------------------------------------------------------
+           The RUNS test for file D_MT_BIN       
+     Up and down runs in a sample of 10000
+_________________________________________________ 
+                 Run test for D_MT_BIN       :
+       runs up; ks test for 10 p's: .801267
+     runs down; ks test for 10 p's: .283493
+                 Run test for D_MT_BIN       :
+       runs up; ks test for 10 p's: .919984
+     runs down; ks test for 10 p's: .218196
+--------------------------------------------------------------------------------
+                Results of craps test for D_MT_BIN       
+  No. of wins:  Observed Expected
+                                98570    98585.86
+ Chisq=  25.27 for 20 degrees of freedom, p=  .80864
+               Throws Observed Expected  Chisq     Sum
+            SUMMARY  FOR D_MT_BIN       
+                p-value for no. of wins: .471726
+                p-value for throws/game: .808635
+  Test completed.  File D_MT_BIN       
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

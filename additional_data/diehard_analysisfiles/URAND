@@ -1,0 +1,333 @@
+ BIRTHDAY SPACINGS TEST, M= 512 N=2**24 LAMBDA=  2.0000
+           D_UR_BIN        using bits  1 to 24 p-value=  .885094
+           D_UR_BIN        using bits  2 to 25 p-value=  .737219
+           D_UR_BIN        using bits  3 to 26 p-value=  .609146
+           D_UR_BIN        using bits  4 to 27 p-value=  .811428
+           D_UR_BIN        using bits  5 to 28 p-value=  .151330
+           D_UR_BIN        using bits  6 to 29 p-value=  .890707
+           D_UR_BIN        using bits  7 to 30 p-value=  .299888
+           D_UR_BIN        using bits  8 to 31 p-value=  .178463
+           D_UR_BIN        using bits  9 to 32 p-value=  .264870
+   The 9 p-values were
+        .885094   .737219   .609146   .811428   .151330
+        .890707   .299888   .178463   .264870
+  A KSTEST for the 9 p-values yields  .193636
+--------------------------------------------------------------------------------
+           OPERM5 test for file D_UR_BIN       
+ chisquare for 99 degrees of freedom= 71.395; p-value= .016517
+           OPERM5 test for file D_UR_BIN       
+ chisquare for 99 degrees of freedom=111.587; p-value= .817656
+--------------------------------------------------------------------------------
+    Binary rank test for D_UR_BIN       
+         Rank test for 31x31 binary matrices:
+        rows from leftmost 31 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        28       197     211.4   .983261     .983
+        29      5225    5134.0  1.612606    2.596
+        30     23069   23103.0   .050175    2.646
+        31     11509   11551.5   .156544    2.803
+  chisquare= 2.803 for 3 d. of f.; p-value= .623982
+    Binary rank test for D_UR_BIN       
+         Rank test for 32x32 binary matrices:
+        rows from leftmost 32 bits of each 32-bit integer
+      rank   observed  expected (o-e)^2/e  sum
+        29       219     211.4   .271909     .272
+        30      5100    5134.0   .225301     .497
+        31     23052   23103.0   .112790     .610
+        32     11629   11551.5   .519625    1.130
+  chisquare= 1.130 for 3 d. of f.; p-value= .374000
+--------------------------------------------------------------------------------
+ b-rank test for bits  1 to  8 p=1-exp(-SUM/2)= .38106
+ b-rank test for bits  2 to  9 p=1-exp(-SUM/2)= .87931
+ b-rank test for bits  3 to 10 p=1-exp(-SUM/2)= .35943
+ b-rank test for bits  4 to 11 p=1-exp(-SUM/2)= .98321
+ b-rank test for bits  5 to 12 p=1-exp(-SUM/2)= .94526
+ b-rank test for bits  6 to 13 p=1-exp(-SUM/2)= .73639
+ b-rank test for bits  7 to 14 p=1-exp(-SUM/2)= .08170
+ b-rank test for bits  8 to 15 p=1-exp(-SUM/2)= .46751
+ b-rank test for bits  9 to 16 p=1-exp(-SUM/2)= .46052
+ b-rank test for bits 10 to 17 p=1-exp(-SUM/2)= .80088
+ b-rank test for bits 11 to 18 p=1-exp(-SUM/2)= .73689
+ b-rank test for bits 12 to 19 p=1-exp(-SUM/2)= .21331
+ b-rank test for bits 13 to 20 p=1-exp(-SUM/2)= .04532
+ b-rank test for bits 14 to 21 p=1-exp(-SUM/2)= .12731
+ b-rank test for bits 15 to 22 p=1-exp(-SUM/2)= .64887
+ b-rank test for bits 16 to 23 p=1-exp(-SUM/2)= .37208
+ b-rank test for bits 17 to 24 p=1-exp(-SUM/2)= .08722
+ b-rank test for bits 18 to 25 p=1-exp(-SUM/2)= .21019
+ b-rank test for bits 19 to 26 p=1-exp(-SUM/2)= .51281
+ b-rank test for bits 20 to 27 p=1-exp(-SUM/2)= .64100
+ b-rank test for bits 21 to 28 p=1-exp(-SUM/2)= .95424
+ b-rank test for bits 22 to 29 p=1-exp(-SUM/2)= .12575
+ b-rank test for bits 23 to 30 p=1-exp(-SUM/2)= .89486
+ b-rank test for bits 24 to 31 p=1-exp(-SUM/2)= .44551
+ b-rank test for bits 25 to 32 p=1-exp(-SUM/2)= .95101
+   TEST SUMMARY, 25 tests on 100,000 random 6x8 matrices
+ These should be 25 uniform [0,1] random variables:
+     .381059     .879311     .359429     .983207     .945263
+     .736388     .081705     .467506     .460521     .800880
+     .736889     .213314     .045324     .127313     .648867
+     .372077     .087224     .210192     .512811     .641000
+     .954242     .125750     .894857     .445508     .951009
+   brank test summary for D_UR_BIN       
+       The KS test for those 25 supposed UNI's yields
+                    KS p-value= .236985
+--------------------------------------------------------------------------------
+  No. missing words should average  141909. with sigma=428.
+ tst no  1:  142493 missing words,    1.36 sigmas from mean, p-value= .91367
+ tst no  2:  141955 missing words,     .11 sigmas from mean, p-value= .54249
+ tst no  3:  142372 missing words,    1.08 sigmas from mean, p-value= .86015
+ tst no  4:  141879 missing words,    -.07 sigmas from mean, p-value= .47175
+ tst no  5:  142026 missing words,     .27 sigmas from mean, p-value= .60742
+ tst no  6:  142278 missing words,     .86 sigmas from mean, p-value= .80549
+ tst no  7:  141547 missing words,    -.85 sigmas from mean, p-value= .19862
+ tst no  8:  141858 missing words,    -.12 sigmas from mean, p-value= .45227
+ tst no  9:  142003 missing words,     .22 sigmas from mean, p-value= .58662
+ tst no 10:  142143 missing words,     .55 sigmas from mean, p-value= .70745
+ tst no 11:  141437 missing words,   -1.10 sigmas from mean, p-value= .13489
+ tst no 12:  141522 missing words,    -.90 sigmas from mean, p-value= .18274
+ tst no 13:  141879 missing words,    -.07 sigmas from mean, p-value= .47175
+ tst no 14:  143147 missing words,    2.89 sigmas from mean, p-value= .99808
+ tst no 15:  141929 missing words,     .05 sigmas from mean, p-value= .51833
+ tst no 16:  142713 missing words,    1.88 sigmas from mean, p-value= .96979
+ tst no 17:  142312 missing words,     .94 sigmas from mean, p-value= .82660
+ tst no 18:  142312 missing words,     .94 sigmas from mean, p-value= .82660
+ tst no 19:  141306 missing words,   -1.41 sigmas from mean, p-value= .07932
+ tst no 20:  141572 missing words,    -.79 sigmas from mean, p-value= .21530
+--------------------------------------------------------------------------------
+    OPSO for D_UR_BIN        using bits 23 to 32        142377  1.613  .9466
+    OPSO for D_UR_BIN        using bits 22 to 31        141455 -1.567  .0586
+    OPSO for D_UR_BIN        using bits 21 to 30        141677  -.801  .2115
+    OPSO for D_UR_BIN        using bits 20 to 29        141756  -.529  .2985
+    OPSO for D_UR_BIN        using bits 19 to 28        142073   .564  .7138
+    OPSO for D_UR_BIN        using bits 18 to 27        142343  1.495  .9326
+    OPSO for D_UR_BIN        using bits 17 to 26        141992   .285  .6122
+    OPSO for D_UR_BIN        using bits 16 to 25        141497 -1.422  .0775
+    OPSO for D_UR_BIN        using bits 15 to 24        141941   .109  .5435
+    OPSO for D_UR_BIN        using bits 14 to 23        141600 -1.067  .1431
+    OPSO for D_UR_BIN        using bits 13 to 22        142116   .713  .7620
+    OPSO for D_UR_BIN        using bits 12 to 21        141972   .216  .5855
+    OPSO for D_UR_BIN        using bits 11 to 20        141923   .047  .5188
+    OPSO for D_UR_BIN        using bits 10 to 19        142326  1.437  .9246
+    OPSO for D_UR_BIN        using bits  9 to 18        142097   .647  .7412
+    OPSO for D_UR_BIN        using bits  8 to 17        141967   .199  .5788
+    OPSO for D_UR_BIN        using bits  7 to 16        142058   .513  .6959
+    OPSO for D_UR_BIN        using bits  6 to 15        141457 -1.560  .0594
+    OPSO for D_UR_BIN        using bits  5 to 14        141542 -1.267  .1026
+    OPSO for D_UR_BIN        using bits  4 to 13        142851  3.247  .9994
+    OPSO for D_UR_BIN        using bits  3 to 12        141784  -.432  .3328
+    OPSO for D_UR_BIN        using bits  2 to 11        141715  -.670  .2514
+    OPSO for D_UR_BIN        using bits  1 to 10        141754  -.536  .2961
+    OQSO for D_UR_BIN        using bits 28 to 32        141903  -.021  .4914
+    OQSO for D_UR_BIN        using bits 27 to 31        141416 -1.672  .0472
+    OQSO for D_UR_BIN        using bits 26 to 30        141692  -.737  .2307
+    OQSO for D_UR_BIN        using bits 25 to 29        141937   .094  .5374
+    OQSO for D_UR_BIN        using bits 24 to 28        141439 -1.594  .0554
+    OQSO for D_UR_BIN        using bits 23 to 27        141891  -.062  .4752
+    OQSO for D_UR_BIN        using bits 22 to 26        142042   .450  .6735
+    OQSO for D_UR_BIN        using bits 21 to 25        141328 -1.971  .0244
+    OQSO for D_UR_BIN        using bits 20 to 24        142816  3.073  .9989
+    OQSO for D_UR_BIN        using bits 19 to 23        142191   .955  .8302
+    OQSO for D_UR_BIN        using bits 18 to 22        141964   .185  .5735
+    OQSO for D_UR_BIN        using bits 17 to 21        141296 -2.079  .0188
+    OQSO for D_UR_BIN        using bits 16 to 20        141732  -.601  .2739
+    OQSO for D_UR_BIN        using bits 15 to 19        141666  -.825  .2047
+    OQSO for D_UR_BIN        using bits 14 to 18        141937   .094  .5374
+    OQSO for D_UR_BIN        using bits 13 to 17        142025   .392  .6525
+    OQSO for D_UR_BIN        using bits 12 to 16        141551 -1.215  .1122
+    OQSO for D_UR_BIN        using bits 11 to 15        142063   .521  .6988
+    OQSO for D_UR_BIN        using bits 10 to 14        142418  1.724  .9577
+    OQSO for D_UR_BIN        using bits  9 to 13        142113   .690  .7550
+    OQSO for D_UR_BIN        using bits  8 to 12        141730  -.608  .2716
+    OQSO for D_UR_BIN        using bits  7 to 11        141591 -1.079  .1403
+    OQSO for D_UR_BIN        using bits  6 to 10        142194   .965  .8327
+    OQSO for D_UR_BIN        using bits  5 to  9        141845  -.218  .4137
+    OQSO for D_UR_BIN        using bits  4 to  8        141716  -.655  .2561
+    OQSO for D_UR_BIN        using bits  3 to  7        142129   .745  .7718
+    OQSO for D_UR_BIN        using bits  2 to  6        142519  2.067  .9806
+    OQSO for D_UR_BIN        using bits  1 to  5        141498 -1.394  .0816
+     DNA for D_UR_BIN        using bits 31 to 32        142363  1.338  .9096
+     DNA for D_UR_BIN        using bits 30 to 31        142075   .489  .6875
+     DNA for D_UR_BIN        using bits 29 to 30        141929   .058  .5231
+     DNA for D_UR_BIN        using bits 28 to 29        142516  1.790  .9632
+     DNA for D_UR_BIN        using bits 27 to 28        142634  2.138  .9837
+     DNA for D_UR_BIN        using bits 26 to 27        142030   .356  .6391
+     DNA for D_UR_BIN        using bits 25 to 26        141509 -1.181  .1188
+     DNA for D_UR_BIN        using bits 24 to 25        141730  -.529  .2984
+     DNA for D_UR_BIN        using bits 23 to 24        141851  -.172  .4317
+     DNA for D_UR_BIN        using bits 22 to 23        141672  -.700  .2419
+     DNA for D_UR_BIN        using bits 21 to 22        141731  -.526  .2994
+     DNA for D_UR_BIN        using bits 20 to 21        141212 -2.057  .0198
+     DNA for D_UR_BIN        using bits 19 to 20        141563 -1.022  .1535
+     DNA for D_UR_BIN        using bits 18 to 19        142021   .329  .6291
+     DNA for D_UR_BIN        using bits 17 to 18        141689  -.650  .2579
+     DNA for D_UR_BIN        using bits 16 to 17        142068   .468  .6801
+     DNA for D_UR_BIN        using bits 15 to 16        141989   .235  .5929
+     DNA for D_UR_BIN        using bits 14 to 15        142024   .338  .6324
+     DNA for D_UR_BIN        using bits 13 to 14        141907  -.007  .4973
+     DNA for D_UR_BIN        using bits 12 to 13        142099   .560  .7121
+     DNA for D_UR_BIN        using bits 11 to 12        141840  -.205  .4190
+     DNA for D_UR_BIN        using bits 10 to 11        141571  -.998  .1591
+     DNA for D_UR_BIN        using bits  9 to 10        142125   .636  .7377
+     DNA for D_UR_BIN        using bits  8 to  9        141708  -.594  .2763
+     DNA for D_UR_BIN        using bits  7 to  8        142217   .908  .8180
+     DNA for D_UR_BIN        using bits  6 to  7        141993   .247  .5975
+     DNA for D_UR_BIN        using bits  5 to  6        141608  -.889  .1870
+     DNA for D_UR_BIN        using bits  4 to  5        142094   .545  .7070
+     DNA for D_UR_BIN        using bits  3 to  4        142156   .728  .7666
+     DNA for D_UR_BIN        using bits  2 to  3        142126   .639  .7386
+     DNA for D_UR_BIN        using bits  1 to  2        142501  1.745  .9595
+--------------------------------------------------------------------------------
+   Test results for D_UR_BIN       
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size:2560000
+                               chisquare  equiv normal  p-value
+  Results fo COUNT-THE-1's in successive bytes:
+ byte stream for D_UR_BIN         2689.32      2.677      .996290
+ byte stream for D_UR_BIN         2554.36       .769      .778980
+--------------------------------------------------------------------------------
+ Chi-square with 5^5-5^4=2500 d.of f. for sample size: 256000
+                      chisquare  equiv normal  p value
+  Results for COUNT-THE-1's in specified bytes:
+           bits  1 to  8  2541.44       .586      .721084
+           bits  2 to  9  2554.75       .774      .780630
+           bits  3 to 10  2585.87      1.214      .887710
+           bits  4 to 11  2420.76     -1.121      .131221
+           bits  5 to 12  2444.29      -.788      .215370
+           bits  6 to 13  2503.17       .045      .517883
+           bits  7 to 14  2453.58      -.657      .255739
+           bits  8 to 15  2511.34       .160      .563731
+           bits  9 to 16  2539.40       .557      .711284
+           bits 10 to 17  2448.10      -.734      .231474
+           bits 11 to 18  2461.84      -.540      .294719
+           bits 12 to 19  2425.96     -1.047      .147525
+           bits 13 to 20  2506.51       .092      .536697
+           bits 14 to 21  2416.24     -1.185      .118092
+           bits 15 to 22  2518.13       .256      .601158
+           bits 16 to 23  2451.32      -.688      .245590
+           bits 17 to 24  2529.70       .420      .662759
+           bits 18 to 25  2483.13      -.239      .405690
+           bits 19 to 26  2545.44       .643      .739785
+           bits 20 to 27  2598.43      1.392      .918030
+           bits 21 to 28  2472.82      -.384      .350338
+           bits 22 to 29  2681.38      2.565      .994842
+           bits 23 to 30  2576.46      1.081      .860211
+           bits 24 to 31  2555.94       .791      .785571
+           bits 25 to 32  2611.97      1.583      .943344
+--------------------------------------------------------------------------------
+           CDPARK: result of ten tests on file D_UR_BIN       
+            Of 12,000 tries, the average no. of successes
+                 should be 3523 with sigma=21.9
+            Successes: 3520    z-score:  -.137 p-value: .445521
+            Successes: 3557    z-score:  1.553 p-value: .939730
+            Successes: 3522    z-score:  -.046 p-value: .481790
+            Successes: 3501    z-score: -1.005 p-value: .157553
+            Successes: 3535    z-score:   .548 p-value: .708135
+            Successes: 3511    z-score:  -.548 p-value: .291865
+            Successes: 3530    z-score:   .320 p-value: .625377
+            Successes: 3522    z-score:  -.046 p-value: .481790
+            Successes: 3477    z-score: -2.100 p-value: .017844
+            Successes: 3509    z-score:  -.639 p-value: .261324
+ 
+           square size   avg. no.  parked   sample sigma
+             100.            3518.400       20.215
+            KSTEST for the above 10: p=  .201535
+--------------------------------------------------------------------------------
+               This is the MINIMUM DISTANCE test
+              for random integers in the file D_UR_BIN       
+     Sample no.    d^2     avg     equiv uni            
+           5     .8397    .9067     .569972
+          10     .2661    .7836     .234636
+          15     .5974    .6554     .451420
+          20    1.3818    .7221     .750602
+          25     .1680    .7882     .155321
+          30    2.8884    .8631     .945136
+          35    8.7659   1.2534     .999851
+          40    1.4030   1.3125     .755866
+          45     .2702   1.2003     .237790
+          50    1.1738   1.1993     .692636
+          55    2.1140   1.2004     .880527
+          60    2.9291   1.1818     .947333
+          65    1.0267   1.1412     .643674
+          70    1.1129   1.1299     .673222
+          75    1.1502   1.0978     .685252
+          80     .0500   1.0476     .049053
+          85     .0075   1.0317     .007499
+          90    5.9940   1.0680     .997580
+          95    1.0482   1.0509     .651276
+         100     .1601   1.0096     .148588
+     MINIMUM DISTANCE TEST for D_UR_BIN       
+          Result of KS test on 20 transformed mindist^2's:
+                                  p-value= .564288
+--------------------------------------------------------------------------------
+               The 3DSPHERES test for file D_UR_BIN       
+ sample no:  1     r^3=  94.976     p-value= .95782
+ sample no:  2     r^3=   6.055     p-value= .18277
+ sample no:  3     r^3=   1.459     p-value= .04746
+ sample no:  4     r^3=  66.592     p-value= .89136
+ sample no:  5     r^3=  10.049     p-value= .28465
+ sample no:  6     r^3=  44.697     p-value= .77461
+ sample no:  7     r^3=  22.686     p-value= .53055
+ sample no:  8     r^3=  17.909     p-value= .44952
+ sample no:  9     r^3=  17.663     p-value= .44498
+ sample no: 10     r^3=   7.104     p-value= .21085
+ sample no: 11     r^3=  34.823     p-value= .68676
+ sample no: 12     r^3=  14.523     p-value= .38374
+ sample no: 13     r^3=  16.087     p-value= .41505
+ sample no: 14     r^3=   5.548     p-value= .16883
+ sample no: 15     r^3=   7.329     p-value= .21675
+ sample no: 16     r^3=  27.904     p-value= .60550
+ sample no: 17     r^3= 149.228     p-value= .99309
+ sample no: 18     r^3=  47.867     p-value= .79721
+ sample no: 19     r^3=  30.037     p-value= .63258
+ sample no: 20     r^3=  40.279     p-value= .73884
+       3DSPHERES test for file D_UR_BIN             p-value= .033244
+--------------------------------------------------------------------------------
+            RESULTS OF SQUEEZE TEST FOR D_UR_BIN       
+         Table of standardized frequency counts
+     ( (obs-exp)/sqrt(exp) )^2
+        for j taking values <=6,7,8,...,47,>=48:
+    -1.5      .1     -.1      .8     -.4     -.5
+     -.1      .6      .7    -1.0      .1      .0
+     -.6      .9     1.7     1.6    -1.6     -.7
+     -.1     1.1    -1.3      .8     -.8     -.9
+      .8    -1.7     -.7     1.8    -1.6      .3
+     1.4      .1    -1.3     -.2      .3     -.8
+      .0     -.4    -1.2     2.1      .1     2.0
+     -.1
+           Chi-square with 42 degrees of freedom: 44.422
+              z-score=   .264  p-value= .630092
+______________________________________________________________
+--------------------------------------------------------------------------------
+                Test no.  1      p-value  .544277
+                Test no.  2      p-value  .091422
+                Test no.  3      p-value  .748123
+                Test no.  4      p-value  .443077
+                Test no.  5      p-value  .747182
+                Test no.  6      p-value  .030905
+                Test no.  7      p-value  .676036
+                Test no.  8      p-value  .185906
+                Test no.  9      p-value  .833166
+                Test no. 10      p-value  .085517
+   Results of the OSUM test for D_UR_BIN       
+        KSTEST on the above 10 p-values:  .433237
+--------------------------------------------------------------------------------
+           The RUNS test for file D_UR_BIN       
+     Up and down runs in a sample of 10000
+_________________________________________________ 
+                 Run test for D_UR_BIN       :
+       runs up; ks test for 10 p's: .199284
+     runs down; ks test for 10 p's: .574978
+                 Run test for D_UR_BIN       :
+       runs up; ks test for 10 p's: .176073
+     runs down; ks test for 10 p's: .711254
+--------------------------------------------------------------------------------
+                Results of craps test for D_UR_BIN       
+  No. of wins:  Observed Expected
+                                99175    98585.86
+ Chisq=  22.38 for 20 degrees of freedom, p=  .67973
+               Throws Observed Expected  Chisq     Sum
+            SUMMARY  FOR D_UR_BIN       
+                p-value for no. of wins: .995793
+                p-value for throws/game: .679729
+  Test completed.  File D_UR_BIN       
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
