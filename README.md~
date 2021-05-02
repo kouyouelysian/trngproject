@@ -1,6 +1,13 @@
 # TRNG PROJECT
 
-this is the repository of my true random number generator project that i made for my bachelor's thesis. it contains python scripts used for collecting and analysing data, c firmware for arduino and some additional images and photos.
+this is the repository of my true random number generator project
+
+that i made for my bachelor's thesis.
+
+
+it contains python scripts used for collecting and analysing data,
+
+c firmware for arduino and some additional images and photos.
 
 ## python scripts
 
